@@ -23,7 +23,7 @@ public class SpendingMenu {
         while (a) {
 
             System.out
-                    .println("Menu accaunta:\n 1 - Add;\n 2 - List;\n 3 - Clear by date;\n 4 - Total by currency;\n 5 - Exit");
+                    .println("Account menu:\n 1 - Add;\n 2 - List;\n 3 - Clear by date;\n 4 - Total by currency;\n 5 - Exit");
             Scanner scanner = new Scanner(System.in);
             String operation = scanner.next();
             if (operation.equals("1")) {
