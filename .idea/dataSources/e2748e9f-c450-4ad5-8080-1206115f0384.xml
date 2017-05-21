@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="IntelliartsTest@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="intelliartstest">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="3bankaccout"/>
+    <schema id="4" parent="1" name="bank"/>
+    <schema id="5" parent="1" name="bankaccout"/>
+    <schema id="6" parent="1" name="finalbankaccout"/>
+    <schema id="7" parent="1" name="finalbankaccout1"/>
+    <schema id="8" parent="1" name="hibernate"/>
+    <schema id="9" parent="1" name="ibankaccout"/>
+    <schema id="10" parent="1" name="imarket"/>
+    <schema id="11" parent="1" name="information_schema"/>
+    <schema id="12" parent="1" name="jdbc"/>
+    <schema id="13" parent="1" name="jpadb"/>
+    <schema id="14" parent="1" name="library"/>
+    <schema id="15" parent="1" name="market"/>
+    <schema id="16" parent="1" name="market12"/>
+    <schema id="17" parent="1" name="mysql"/>
+    <schema id="18" parent="1" name="name"/>
+    <schema id="19" parent="1" name="performance_schema"/>
+    <schema id="20" parent="1" name="sakila"/>
+    <schema id="21" parent="1" name="servlet"/>
+    <schema id="22" parent="1" name="sys"/>
+    <schema id="23" parent="1" name="test1"/>
+    <schema id="24" parent="1" name="testing1"/>
+    <schema id="25" parent="1" name="testing2"/>
+    <schema id="26" parent="1" name="testing3"/>
+    <schema id="27" parent="1" name="testing4"/>
+    <schema id="28" parent="1" name="world"/>
+    <table id="29" parent="2" name="account"/>
+    <table id="30" parent="2" name="spending"/>
+    <column id="31" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="32" parent="29" name="login">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="29" name="password">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="29" name="name">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="29" name="secondName">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="36" parent="29" name="login">
+      <ColNames>login</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="37" parent="29" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="38" parent="29" name="login">
+      <ColNames>login</ColNames>
+      <UnderlyingIndexName>login</UnderlyingIndexName>
+    </key>
+    <column id="39" parent="30" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="40" parent="30" name="amount">
+      <Position>2</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="30" name="description">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="30" name="date">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="30" name="currency">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="30" name="id_account">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="45" parent="30" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
