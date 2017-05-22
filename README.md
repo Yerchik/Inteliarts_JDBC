@@ -1,1 +1,1 @@
-в package yerchik.App, в класі MainMenu в методі meinMenu потрібно вказати логін і апроль до mysql, і запустити Main class в package yerchik.App. 
+В package yerchik.App, в класі MainMenu в методі meinMenu потрібно вказати логін і апроль до mysql, і запустити Main class в package yerchik.App. А далі потрібно створити акаунт, в якому можна буде робити всі операції, які були в завдані. 

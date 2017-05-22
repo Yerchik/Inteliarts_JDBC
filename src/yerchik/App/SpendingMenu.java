@@ -60,9 +60,14 @@ public class SpendingMenu {
     public static void list(Connection connection) throws SQLException, IOException {
         List<Spending> all = SpendingDB.getAll(connection);
         List<String> date = new ArrayList<>();
+        int i = 0;
         Iterator<String> iterator = SpendingDB.getAllDate(connection).iterator();
         while (iterator.hasNext()) {
+            i = 1;
             date.add(iterator.next());
+        }
+        if (i == 0){
+            System.out.println("Your list is empty");
         }
         for (String s : date) {
             System.out.println(s);
@@ -85,7 +90,7 @@ public class SpendingMenu {
                 System.out.println(i + " - " + iterator.next());
             }
             if (i == 0) {
-                System.out.println("Your list is clear");
+                System.out.println("Your list is empty");
                 break;
             }
             String operation = scanner.next();
@@ -114,7 +119,7 @@ public class SpendingMenu {
                 System.out.println(i + " - " + iterator.next());
             }
             if (i == 0) {
-                System.out.println("Your list is clear");
+                System.out.println("Your list is empty");
                 break;
             }
             String operation = scanner.next();
