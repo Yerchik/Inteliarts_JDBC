@@ -1,1 +1,1 @@
-в package yerchik.App, в класі MainMenu в методі meinMenu потрібно вказати настройки mysql, і запустити Main class 
+в package yerchik.App, в класі MainMenu в методі meinMenu потрібно вказати настройки mysql, і запустити Main class. 
